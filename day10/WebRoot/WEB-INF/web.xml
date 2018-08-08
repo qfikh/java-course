@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  
+  
+  <context-param>
+    <param-name>AAA</param-name>
+    <param-value>AAA's value</param-value>
+  </context-param>
+  <context-param>
+    <param-name>BBB</param-name>
+    <param-value>BBB's value</param-value>
+  </context-param>
+  
+  
+  
+  <servlet>
+    <servlet-name>FirstServlet</servlet-name>
+    <servlet-class>gz.itcast.a_servlet.FirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FirstServlet</servlet-name>
+    <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Demo1</servlet-name>
+    <servlet-class>gz.itcast.b_mapping.Demo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Demo1</servlet-name>
+    <url-pattern>/Demo1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LifeDemo</servlet-name>
+    <servlet-class>gz.itcast.c_life.LifeDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LifeDemo</servlet-name>
+    <url-pattern>/LifeDemo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>LifeDemo2</servlet-name>
+    <servlet-class>gz.itcast.c_life.LifeDemo2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LifeDemo2</servlet-name>
+    <url-pattern>/LifeDemo2</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>TheradDemo</servlet-name>
+    <servlet-class>gz.itcast.e_thread.TheradDemo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TheradDemo</servlet-name>
+    <url-pattern>/TheradDemo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ConfigDemo</servlet-name>
+    <servlet-class>gz.itcast.f_config.ConfigDemo</servlet-class>
+    <init-param>
+      <param-name>path</param-name>
+      <param-value>/Users/qfikh/Library/Tomcat/apache-tomcat-8.5.6/webapps/day10/resource/a.txt</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfigDemo</servlet-name>
+    <url-pattern>/ConfigDemo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ContextDemo1</servlet-name>
+    <servlet-class>gz.itcast.f_context.ContextDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextDemo1</servlet-name>
+    <url-pattern>/ContextDemo1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ContextDemo2</servlet-name>
+    <servlet-class>gz.itcast.f_context.ContextDemo2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextDemo2</servlet-name>
+    <url-pattern>/ContextDemo2</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ContextDemo3</servlet-name>
+    <servlet-class>gz.itcast.f_context.ContextDemo3</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextDemo3</servlet-name>
+    <url-pattern>/ContextDemo3</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ContextDemo4</servlet-name>
+    <servlet-class>gz.itcast.f_context.ContextDemo4</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContextDemo4</servlet-name>
+    <url-pattern>/ContextDemo4</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ForwardDemo1</servlet-name>
+    <servlet-class>gz.itcast.g_forward.ForwardDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ForwardDemo1</servlet-name>
+    <url-pattern>/ForwardDemo1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetDataServlet</servlet-name>
+    <servlet-class>gz.itcast.g_forward.GetDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetDataServlet</servlet-name>
+    <url-pattern>/GetDataServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RedirectDemo1</servlet-name>
+    <servlet-class>gz.itcast.g_forward.RedirectDemo1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RedirectDemo1</servlet-name>
+    <url-pattern>/RedirectDemo1</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
